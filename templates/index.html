@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review validation</title>
+    <link rel='stylesheet' type='text/css' href="{%static 'styles/style.css'%}">
+</head>
+<body>
+    <div id='mainnavbar'>
+        <h1 align='center'>Sentiment Analysis</h1>
+    </div> 
+    <div id='buttons'>
+        <ol>
+            <form action="upload">
+            <li>Load NLTK Dataset</li>
+            </form>
+
+            
+            <li><input type='file'></li><br>
+            <li><button>Read NLTK Tweets Data</button></li><br>
+            <li><button>Run Random Forest Algorithm</button></li><br>
+            <li><button>Detect Sentiment Type</button></li><br>
+            <li><button>Accuracy Graph</button></li>
+        </ol>
+    </div>
+    <div id='outputfield'>
+        <textarea id='textarea' placeholder="Observer Output Here" readonly></textarea>
+    </div>
+</body>
+</html>
